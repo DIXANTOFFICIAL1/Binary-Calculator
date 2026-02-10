@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Binary Calculator</title>
+<link rel="stylesheet" href="binary.css">
+<script src="binary.js"></script>
+</head>
+<body>
+<div class="calculator">
+<div class="display">
+<input type="text" id="result" readonly>
+</div>
+<div class="buttons">
+<button onclick="appendDigit('0')">0</button>
+<button onclick="appendDigit('1')">1</button>
+<button onclick="calculate()">=</button>
+<button onclick="reset()">Reset</button>
+<button onclick="prevOperation()"><< Prev Operation</button>
+<button onclick="nextOperation()">Next Operation >></button>
+
+<button onclick="performOperation('logicalAnd')">Logical AND</button>
+<button onclick="performOperation('logicalOr')">Logical OR</button>
+<button onclick="performOperation('logicalNot')">Logical NOT</button>
+
+<button onclick="performOperation('bitwiseAnd')">Bitwise AND</button>
+<button onclick="performOperation('bitwiseOr')">Bitwise OR</button>
+<button onclick="performOperation('bitwiseXor')">Bitwise XOR</button>
+<button onclick="performOperation('bitwiseNot')">Bitwise NOT</button>
+
+<button onclick="performOperation('rightShift')">Right Shift</button>
+<button onclick="performOperation('leftShift')">Left Shift</button>
+<button onclick="performOperation('unsignedRightShift')">Unsigned Right Shift</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
