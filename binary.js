@@ -5,6 +5,7 @@ let currentStep = -1;
 
 function appendDigit(digit) {
 result += digit;
+  
 document.getElementById('result').value = result;
 }
 
@@ -83,3 +84,4 @@ currentStep++;
 document.getElementById('result').value = previousResults[currentStep];
 }
 }
+
