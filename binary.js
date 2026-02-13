@@ -17,6 +17,7 @@ let operationResult = "";
 
 switch (currentOperation) {
 case 'logicalAnd':
+    
 operationResult = (operand1 && operand2).toString(2);
 break;
 case 'logicalOr':
@@ -83,5 +84,6 @@ currentStep++;
 document.getElementById('result').value = previousResults[currentStep];
 }
 }
+
 
 
