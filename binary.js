@@ -15,9 +15,8 @@ let operand1 = parseInt(operands[0], 2);
 let operand2 = parseInt(operands[2], 2);
 let operationResult = "";
 
-switch (currentOperation) {
+switch (currentOperation) {   
 case 'logicalAnd':
-    
 operationResult = (operand1 && operand2).toString(2);
 break;
 case 'logicalOr':
@@ -84,6 +83,7 @@ currentStep++;
 document.getElementById('result').value = previousResults[currentStep];
 }
 }
+
 
 
 
