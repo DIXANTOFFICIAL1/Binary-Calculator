@@ -10,6 +10,7 @@ document.getElementById('result').value = result;
 
 function calculate() {
 if (currentOperation && result) {
+  
 let operands = result.split(' ');
 let operand1 = parseInt(operands[0], 2);
 let operand2 = parseInt(operands[2], 2);
@@ -83,6 +84,7 @@ currentStep++;
 document.getElementById('result').value = previousResults[currentStep];
 }
 }
+
 
 
 
